@@ -1,4 +1,3 @@
-/* รีเซ็ตค่าเริ่มต้น */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,12 +6,11 @@
 }
 
 body {
-    background-color: #1a0b14; /* สีพื้นหลังดำอมชมพูเข้ม/ม่วงเข้ม */
-    color: #ffe6f0; /* สีข้อความขาวอมชมพู */
+    background-color: #1a0b14;
+    color: #ffe6f0;
     line-height: 1.6;
 }
 
-/* ---------------- HEADER ---------------- */
 header {
     background: linear-gradient(180deg, #2d1322 0%, #1a0b14 100%);
     color: #fff;
@@ -32,8 +30,8 @@ header {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ff99cc; /* ขอบสีชมพูคริสตัล Elysia */
-    box-shadow: 0 0 25px rgba(255, 153, 204, 0.5); /* เรืองแสงสีชมพู */
+    border: 3px solid #ff99cc;
+    box-shadow: 0 0 25px rgba(255, 153, 204, 0.5);
     margin-bottom: 20px;
 }
 
@@ -46,10 +44,9 @@ h1 {
 }
 
 header p {
-    color: #d9b3c6; /* สีเทาอมชมพู */
+    color: #d9b3c6;
 }
 
-/* ติดต่อ */
 .contact-info {
     margin: 15px 0;
     font-size: 1rem;
@@ -57,7 +54,7 @@ header p {
 }
 
 .contact-info a {
-    color: #d896ff; /* สีม่วงอ่อน */
+    color: #d896ff;
     text-decoration: none;
     transition: color 0.3s, text-shadow 0.3s;
 }
@@ -67,7 +64,6 @@ header p {
     text-shadow: 0 0 8px rgba(255, 153, 204, 0.6);
 }
 
-/* ---------------- BUTTONS & LINKS ---------------- */
 .social-links {
     margin-top: 20px;
 }
@@ -79,7 +75,7 @@ header p {
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    color: #ff99cc; /* สีชมพูหลัก */
+    color: #ff99cc;
     background-color: transparent;
     border: 1px solid #ff99cc;
     cursor: pointer;
@@ -93,17 +89,15 @@ header p {
     transform: translateY(-2px);
 }
 
-/* ปรับปุ่มให้เป็นสีตามคาแรคเตอร์ (ชมพู, ม่วง, ทองอ่อน) */
-.project-btn { border-color: #ffd699; color: #ffd699; } /* สีทองอ่อน Elysia */
+.project-btn { border-color: #ffd699; color: #ffd699; }
 .project-btn:hover { background-color: rgba(255, 214, 153, 0.15); box-shadow: 0 0 20px rgba(255, 214, 153, 0.4); }
 
-.assignment-btn { border-color: #d896ff; color: #d896ff; } /* สีม่วงคริสตัล */
+.assignment-btn { border-color: #d896ff; color: #d896ff; }
 .assignment-btn:hover { background-color: rgba(216, 150, 255, 0.15); box-shadow: 0 0 20px rgba(216, 150, 255, 0.4); }
 
 .back-btn { border-color: #ff6699; color: #ff6699; }
 .back-btn:hover { background-color: rgba(255, 102, 153, 0.15); box-shadow: 0 0 20px rgba(255, 102, 153, 0.4); }
 
-/* ---------------- CONTAINERS & GRIDS ---------------- */
 .container {
     max-width: 1100px;
     margin: 60px auto;
@@ -122,7 +116,7 @@ h2::after {
     content: '';
     width: 60px;
     height: 3px;
-    background-color: #d896ff; /* เส้นขีดใต้หัวข้อสีม่วงอ่อน */
+    background-color: #d896ff;
     display: block;
     margin: 15px auto 0;
     border-radius: 2px;
@@ -136,7 +130,6 @@ h2::after {
     text-align: center;
 }
 
-/* สไตล์กล่อง (Card) สำหรับหน้าแรก */
 .card {
     background: rgba(45, 19, 34, 0.8);
     padding: 25px 20px;
@@ -166,7 +159,6 @@ h2::after {
     color: #e6b3cc;
 }
 
-/* ---------------- PROJECT & ASSIGNMENT LIST ---------------- */
 .project-list {
     display: flex;
     flex-direction: column;
@@ -209,7 +201,6 @@ h2::after {
     font-size: 0.95rem;
 }
 
-/* จัดการรูปและวิดีโอใน Project */
 .media-display {
     max-width: 100%;
     height: auto;
@@ -219,7 +210,6 @@ h2::after {
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* ---------------- INTERESTS ---------------- */
 .interests-box {
     display: flex;
     justify-content: center;
@@ -239,7 +229,7 @@ h2::after {
 }
 
 .interest-item:hover {
-    border-color: #d896ff; /* เปลี่ยนขอบเป็นสีม่วงอ่อนตอน hover */
+    border-color: #d896ff;
     box-shadow: 0 0 25px rgba(216, 150, 255, 0.2);
 }
 
@@ -252,7 +242,6 @@ h2::after {
     color: #e6b3cc;
 }
 
-/* ---------------- FOOTER ---------------- */
 footer {
     text-align: center;
     padding: 25px;
@@ -262,7 +251,6 @@ footer {
     margin-top: 60px;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
     header { padding: 50px 15px; }
     h1 { font-size: 1.6rem; }
