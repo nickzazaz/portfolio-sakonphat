@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <h1 style="color: #4facfe;">My Projects</h1>
+            <p>รวมผลงานโปรเจกต์และการพัฒนาของผม</p>
+            <div class="social-links">
+                <button onclick="goBackHome()" class="btn back-btn">⬅️ กลับหน้าหลัก</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>🛠️ โปรเจกต์ปัจจุบัน</h2>
+        <div class="project-list">
+            
+            <!-- รูปภาพ Climax Pot -->
+            <div class="project-card">
+                <h3>🪴Climax Pot</h3>
+                <img src="pic/digital Twin/Climax Pot.png" alt="Climax Pot" class="media-display" onerror="this.style.display='none'">
+            </div>
+
+            <!-- วิดีโอ Mini Digital Twin -->
+            <div class="project-card">
+                <h3>🎥 Mini Digital Twin</h3>
+                <video controls class="media-display">
+                    <source src="pic/digital Twin/mini-digital-twin.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- งาน oceanX -->
+            <div class="project-card">
+                <h3>🌊 oceanX : ssyba eht otni</h3>
+                <video controls class="media-display">
+                    <source src="pic/oceanX/ssyba-eht-otni.mp4" type="video/mp4">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

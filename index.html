@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <img src="pic/profile.jpg" alt="Profile Picture" class="profile-img">
+            <h1>สกลภัทร กฤษกรกุลปรียา</h1>
+            
+            <div class="contact-info">
+                <p>Email: <a href="mailto:thenick99999@gmail.com">thenick99999@gmail.com</a></p>
+                <p>Tel: <a href="tel:0874262551">0874262551</a></p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/nick.sakonphat" target="_blank" class="btn facebook">Facebook</a>
+                <a href="https://www.instagram.com/nick.skp_/" target="_blank" class="btn instagram">Instagram</a>
+                <button onclick="goToAssignments()" class="btn assignment-btn">My Assignments</button>
+                <button onclick="goToProjects()" class="btn project-btn">My Projects</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>งานอดิเรก (Hobbies)</h2>
+        <p style="text-align: center; margin-bottom: 20px; color: #8892b0;">เกมที่ชอบเล่น</p>
+        <div class="grid-container">
+            <div class="card">
+                <img src="pic/mygame/Honkai_Impact_3rd_logo.webp" alt="Honkai Impact 3rd">
+                <p>Honkai Impact 3rd</p>
+            </div>
+            <div class="card">
+                <img src="pic/mygame/Honkai_Star_Rail.webp" alt="Honkai Star Rail">
+                <p>Honkai Star Rail</p>
+            </div>
+            <div class="card">
+                <img src="pic/mygame/Wuthering Waves.jpg" alt="Wuthering Waves">
+                <p>Wuthering Waves</p>
+            </div>
+            <div class="card">
+                <img src="pic/mygame/League of Legends.jpe" alt="League of Legends">
+                <p>League of Legends</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>ทักษะความสามารถ (Skills)</h2>
+        <div class="grid-container">
+            <div class="card">
+                <img src="pic/myprogram/Photoshop.png" alt="Photoshop">
+                <p>Photoshop</p>
+            </div>
+            <div class="card">
+                <img src="pic/myprogram/Adobe_Premiere_Pro.webp" alt="Premiere Pro">
+                <p>Premiere Pro</p>
+            </div>
+            <div class="card">
+                <img src="pic/myprogram/Unity.jpg" alt="Unity" onerror="this.style.display='none'">
+                <p>Unity</p>
+            </div>
+            <div class="card">
+                <img src="pic/myprogram/Python.png" alt="Python" onerror="this.style.display='none'">
+                <p>Python</p>
+            </div>
+            <div class="card">
+                <img src="pic/myprogram/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="card">
+                <img src="pic/myprogram/Css.jpe" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="card">
+                <img src="pic/myprogram/JS..webp" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>ความสนใจ (Interests)</h2>
+        <div class="interests-box">
+            <div class="interest-item">
+                <h3>การทำ Hardware</h3>
+                <p>สนใจในการประกอบเทคโนโลยีต่างๆ</p>
+            </div>
+            <div class="interest-item">
+                <h3>การทำธุรกิจ</h3>
+                <p>สนใจทางด้าน Business และการต่อยอดทางธุรกิจ</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>My Portfolio</p>
+    </footer>
+
+    <!-- เรียกใช้ไฟล์ JS -->
+    <script src="script.js"></script>
+</body>
+</html>

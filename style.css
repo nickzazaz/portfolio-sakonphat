@@ -1,0 +1,268 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: #0a0e17; /* สีพื้นหลังดำอมน้ำเงินลึก (Abyss) */
+    color: #e6f1ff;
+    line-height: 1.6;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    background: linear-gradient(180deg, #05080f 0%, #0d1b2a 100%);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px solid #1b263b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #64ffda;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.4);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: #ccd6f6;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #8892b0;
+}
+
+/* ติดต่อ */
+.contact-info {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #a8b2d1;
+}
+
+.contact-info a {
+    color: #4facfe;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #64ffda;
+}
+
+/* ---------------- BUTTONS & LINKS ---------------- */
+.social-links {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 5px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    transform: translateY(-2px);
+}
+
+.project-btn { border-color: #4facfe; color: #4facfe; }
+.project-btn:hover { background-color: rgba(79, 172, 254, 0.1); box-shadow: 0 0 15px rgba(79, 172, 254, 0.3); }
+
+.assignment-btn { border-color: #b19cd9; color: #b19cd9; }
+.assignment-btn:hover { background-color: rgba(177, 156, 217, 0.1); box-shadow: 0 0 15px rgba(177, 156, 217, 0.3); }
+
+.back-btn { border-color: #ff4b5c; color: #ff4b5c; }
+.back-btn:hover { background-color: rgba(255, 75, 92, 0.1); box-shadow: 0 0 15px rgba(255, 75, 92, 0.3); }
+
+/* ---------------- CONTAINERS & GRIDS ---------------- */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: #e6f1ff;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #4facfe;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.6);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(13, 25, 42, 0.8);
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid #1f2d40;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border: 1px solid #4facfe;
+    box-shadow: 0 10px 25px rgba(79, 172, 254, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #a8b2d1;
+}
+
+/* ---------------- PROJECT & ASSIGNMENT LIST ---------------- */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: rgba(13, 25, 42, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1f2d40;
+    color: #e6f1ff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.link-card {
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateX(10px);
+    border: 1px solid #64ffda;
+    box-shadow: -5px 5px 25px rgba(100, 255, 218, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #64ffda;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #8892b0;
+    font-size: 0.95rem;
+}
+
+/* จัดการรูปและวิดีโอใน Project */
+.media-display {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #1b263b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* ---------------- INTERESTS ---------------- */
+.interests-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    background: rgba(13, 25, 42, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1f2d40;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.interest-item:hover {
+    border-color: #64ffda;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.1);
+}
+
+.interest-item h3 {
+    color: #64ffda;
+    margin-bottom: 15px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #05080f;
+    border-top: 1px solid #1b263b;
+    color: #4a5568;
+    margin-top: 60px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    header { padding: 50px 15px; }
+    h1 { font-size: 1.6rem; }
+    .profile-img { width: 130px; height: 130px; }
+    .grid-container { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .card img { height: 65px; }
+    .link-card:hover { transform: translateY(-5px); }
+}
+@media (max-width: 480px) {
+    .grid-container { grid-template-columns: 1fr; }
+    .btn { display: block; margin: 10px auto; max-width: 220px; }
+}
